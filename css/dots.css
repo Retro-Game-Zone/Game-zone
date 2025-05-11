@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/69390076/original/87583195739e3af626d86b7e1b164c9b96448047/make-any-2d-game-backgrounds-361e964e-a83e-45f7-b77d-3b52be14b026.png'); 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.instructions {
+    flex: 2;
+    padding: 20px;
+}
+
+.instructions h1 {
+    font-family: Kanit;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.game-board {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    grid-template-rows: repeat(6, 50px);
+    gap: 5px;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell.red {
+    background-color: red;
+}
+
+.cell.yellow {
+    background-color: yellow;
+}
+
+#reset-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}

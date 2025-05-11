@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four</title>
+    <link rel="stylesheet" href="css/dots.css">
+</head>
+<body>
+    <div class="container">
+        <div class="instructions">
+            <h1>Connect Four(2 Player)</h1>
+            <h2>How to Play:</h2>
+            <ol>
+                <li>Turns:</li>
+                <ul>
+                    <li>Each player takes turns to drop a disc into one of the columns.</li>
+                    <li>The disc will fall down to the lowest empty space in that column.</li>
+                </ul>
+                <br />
+                <li>Winning:</li>
+                <ul>
+                    <li>The first player to align four of their discs in a row, either horizontally, vertically, or diagonally, wins the game.</li>
+                    <li>The win can be:</li>
+                    <ul>
+                        <li>Horizontal</li>
+                        <li>Vertical</li>
+                        <li>Diagonal</li>
+                    </ul>
+                </ul>
+                <br />
+                <li>Game End:</li>
+                <ul>
+                    <li>The game ends when either:</li>
+                    <ul>
+                        <li>One player gets four discs in a row (and wins).</li>
+                        <li>The board is completely filled and there are no more moves, resulting in a draw if no one wins.</li>
+                    </ul>
+                </ul>
+            
+                <li>Draw:</li>
+                <ul>
+                    <li>If the board is full and no player has connected four discs in a row, the game ends in a draw.</li>
+                </ul>
+                
+            </ol>
+        </div>
+        <div class="game-board">
+            <div id="game-board"></div>
+            <button id="reset-button">Reset Game</button>
+        </div>
+    </div>
+    <script src="js/dots.js"></script>
+</body>
+</html>

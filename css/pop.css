@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.instructions {
+    flex: 2;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.instructions h1, p {
+    font-family: Kanit;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+button{
+    width: 6rem;
+    height: 3rem;
+    background-color: #fff;
+    color: rgb(100, 151, 100);
+    border: none;
+    outline: none;
+    border-radius: 16px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('bg.webp');
+    background-size: cover;
+}
+
+#panel{
+    
+    width: 40vw;
+    height: 60vh;
+    background-color: lightcyan;
+    border-radius: 16px;
+    overflow: hidden;
+    opacity: 90%;
+}
+
+#top{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #fff;
+    background-color: darkcyan;
+}
+
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.box{
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 16px;
+    color: rgb(150, 201, 150);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#bottom{
+    width: 100%;
+    height: 85%;
+    padding: 25px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: hidden;
+}
+
+#bottom h1{
+    font-size: 40px;
+    color: rgb(100, 151, 100);
+}
+
+.bubble{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(150, 201, 150);
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.bubble:hover{
+    background-color:red;
+    cursor: pointer;
+}
+

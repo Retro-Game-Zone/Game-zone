@@ -1,0 +1,105 @@
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('ball.webp'); 
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Main container */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Styling for the rules section */
+.rules {
+  flex: 1;
+  padding: 20px;
+  max-width: 45%;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.rules h1 {
+  color: brown;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rules ol {
+  padding-left: 20px;
+}
+
+.rules ul {
+  margin-left: 10px;
+}
+
+/* Styling for the game container */
+.game-container {
+  flex: 1;
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container h1 {
+  font-size: 2.5rem;
+  color: brown;
+  margin-bottom: 20px;
+}
+
+/* Game area */
+#gameArea {
+  width: 100%;
+  height: 400px; /* Increased height for better gameplay */
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  position: relative; /* This is important for positioning the ball and paddle */
+}
+
+/* Paddle */
+#paddle {
+  position: absolute;
+  bottom: 10px;
+  width: 100px;
+  height: 20px;
+  background-color: #4CAF50;
+  border-radius: 5px;
+}
+
+/* Ball */
+#ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #FF5722;
+  border-radius: 50%;
+}
+
+/* Score and Time Display */
+#score, #time {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 5px;
+}

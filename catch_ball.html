@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hit The Ball - Game</title>
+    <link rel="stylesheet" href="css/catch_ball.css">
+</head>
+<body>
+    <div class="container">
+        <div class="rules">
+            <h1> Game Rules</h1>
+            <ol>
+                <li><strong>Start the Game:</strong>
+                    <ul>
+                        <li>Choose the duration of the game from a dropdown menu.</li>
+                        <li>Once the game starts, the timer begins counting down.</li>
+                        <li>When the timer reaches zero, the game ends automatically, and the final score is displayed.</li>
+                    </ul>
+                </li>
+                <br />
+                <li><strong>Paddle Control:</strong>
+                    <ul>
+                        <li>The paddle moves horizontally at the bottom of the screen.</li>
+                        <li>Control the paddle using the left and right arrow keys on the keyboard.</li>
+                        <li>The player must move the paddle to catch the falling ball.</li>
+                        <li>When the ball touches the paddle, it bounces back upward, and the player earns a point.</li>
+                    </ul>
+                </li>
+                <br />
+                <li><strong>Scoring:</strong>
+                    <ul>
+                        <li>Each time the ball hits the paddle, the player earns one point.</li>
+                        <li>The score is displayed at the top of the screen and updates with every successful catch.</li>
+                        <li>The player must catch as many balls as possible within the chosen time.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="game-container">
+            <h1>Hit The Ball</h1>
+            <div id="gameArea">
+                <div id="ball"></div>
+                <div id="paddle"></div>
+            </div>
+            <div id="score">Score: 0</div>
+            <div id="time">Time: 1:00</div>
+            <select id="timer">
+                <option value="60">1:00</option>
+                <option value="90">1:30</option>
+                <option value="120">2:00</option>
+            </select>
+            <button id="startGame">Start Game</button>
+        </div>
+    </div>
+
+    <script src="js/catch_ball.js"></script>
+</body>
+</html>

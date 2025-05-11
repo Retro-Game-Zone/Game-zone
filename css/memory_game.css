@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://t4.ftcdn.net/jpg/01/23/94/33/360_F_123943367_DkdjkvHMuX1KkiPxnZnQDS4CD6X7sDqw.jpg'); 
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.instructions {
+    flex: 2;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.instructions h1 {
+    font-family: Kanit;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.game-board {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.scoreboard {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleX(-1); /* This line flips the card horizontally */
+}
+
+.card.flipped {
+    transform: rotateY(180deg) scaleX(-1); /* Combine rotation and flipping */
+}
+
+.card.matched {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+#restartButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

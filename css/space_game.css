@@ -1,0 +1,108 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://www.dropbox.com/scl/fi/wvkpgf6hp1c47j2elc82p/Screen-Shot-2024-11-23-at-8.22.57-PM.png?rlkey=32m1iaveyi2k3js130y2ocu7j&st=sh9djho3&raw=1');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 70%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+/* Instructions Section */
+.instructions {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.instructions h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+.instructions p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Game Area Section */
+.game-area {
+    flex: 2;
+    position: relative;
+    background-image: url('https://www.dropbox.com/scl/fi/h82p1cmz8hageb2rog8n2/jeremy-thomas-E0AHdsENmDg-unsplash.jpg?rlkey=x78kvbhgryqv6xv50k4oahpf1&st=21tla717&raw=1');
+    background-size: cover;
+    overflow: hidden;
+    border-left: 3px solid #ddd;
+}
+
+/* Meru Character */
+#meru {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    width: 90px;
+    height: 100px;
+    background-image: url('https://www.dropbox.com/scl/fi/jcbgxeqd75xbfbv9qkkzg/file-1.png?rlkey=1edgel11qlhcg6t0ha171ube0&st=ra7kmghy&raw=1');
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: bottom 0.3s;
+}
+
+/* Meteor Obstacle */
+#meteor {
+    position: absolute;
+    top: 82%;
+    right: -100px;
+    width: 70px;
+    height: 70px;
+    background-image: url('https://www.dropbox.com/scl/fi/s4edkcgvn1nog0tnh2xxm/file.png?rlkey=nsg67d3q0d06xkbac1z6bjeam&st=ndegvlek&raw=1');
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: moveMeteor 3s linear infinite;
+}
+
+@keyframes moveMeteor {
+    from {
+        right: -20px;
+    }
+    to {
+        right: 100%;
+    }
+}
+.scoreboard {
+    margin-top: 20px;
+    font-size: 18px;
+    color: black;
+}
+
+#restartButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restartButton:hover {
+    background-color: #45a049;
+}
