@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funky Memory Game</title>
+    <link rel="stylesheet" href="css/memory_game.css">
+</head>
+<body>
+    <div class="container">
+        <div class="instructions">
+            <h1>Memory Game</h1>
+            <h2>How to Play:</h2>
+            <ol>
+                <li>Find all pairs of matching alphabet cards.</li>
+                <br />
+                <li>Flip two cards at a time to reveal the letters.</li>
+                <br />
+                <li>If the cards match, they stay face up.</li>
+                <br />
+                <li>If they don't match, they flip back over. </li>
+                <br />
+                <li>The game ends when all pairs are matched.</li>
+                <br />
+                <li>Your time and moves are tracked. </li>
+                <br />
+                <li>Try to complete the game in the fewest moves and time possible!</li>
+            </ol>
+        </div>
+        <div class="game-board">
+            <div class="scoreboard">
+                <div>Time: <span id="timer">0</span>s</div>
+                <div>Moves: <span id="moves">0</span></div>
+            </div>
+            <div class="grid-container" id="gameBoard"></div>
+            <button id="restartButton">Restart</button>
+            <button id="fullscreenButton">Go Fullscreen</button> <!-- Fullscreen button added -->
+        </div>
+    </div>
+    <script src="js/memory_game.js"></script>
+</body>
+</html>
